@@ -1,0 +1,28 @@
+.field {
+	background-color: silver;
+	height: 300px;
+	width: 300px;
+	margin: 20px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	border: 2px solid rgb(12, 12, 12);
+	display: flex;
+	flex-wrap: wrap;
+}
+.button {
+	background-color: silver;
+	border: 1px outset black;
+	text-align: center;
+	height: 100px;
+	width: 100px;
+	aspect-ratio: 1;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.button:active {
+	background-color: yellow;
+}
+.information {
+	color: indigo;
+}
