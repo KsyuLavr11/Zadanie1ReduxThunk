@@ -1,11 +1,12 @@
 import styles from './Components.module.css';
 import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
+import { selectIsDraw, selectCurrentPlayer, selectWinner } from '../Selectors';
 
 const InformationLayout = () => {
-	const winner = useSelector((state) => state.winner);
-	const currentPlayer = useSelector((state) => state.currentPlayer);
-	const isDraw = useSelector((state) => state.isDraw);
+	const winner = useSelector(selectWinner);
+	const currentPlayer = useSelector(selectCurrentPlayer);
+	const isDraw = useSelector(selectIsDraw);
 
 	let status;
 	if (isDraw === true) {
