@@ -1,0 +1,13 @@
+export const FETCH_READ_TODOS = 'FETCH_READ_TODOS';
+export const FETCH_CREATE_TODO = 'FETCH_CREATE_TODO';
+export const FETCH_UPDATE_TODO = 'FETCH_UPDATE_TODO';
+export const FETCH_DELETE_TODO = 'FETCH_DELETE_TODO';
+
+export const SET_LOADING = 'SET_LOADING';
+export const SET_ERROR = 'SET_ERROR';
+
+export const SET_SEARCH_TERM = 'SET_SEARCH_TERM';
+export const SET_IS_SORT = 'SET_IS_SORT';
+
+export const SET_TITLE = 'SET_TITLE';
+export const SET_IS_EDITING = 'SET_IS_EDITING';
