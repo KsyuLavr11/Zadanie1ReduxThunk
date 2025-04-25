@@ -24,7 +24,7 @@ export const createTodo = (title) => async (dispatch) => {
 	dispatch(setLoading(true));
 	try {
 		const response = await todosAPI.createTodo(title);
-		dispatch({ type: FETCH_CREATE_TODO, payload: response.data });
+		dispatch({ type: FETCH_CREATE_TODO, payload: response });
 	} catch (error) {
 		console.error('Ошибка при добавлении задачи', error);
 		dispatch(setError(error));
@@ -37,7 +37,7 @@ export const updateTodo = (id, updatedTodo) => async (dispatch) => {
 	dispatch(setLoading(true));
 	try {
 		const response = await todosAPI.updateTodo(id, updatedTodo);
-		dispatch({ type: FETCH_UPDATE_TODO, payload: response.data });
+		dispatch({ type: FETCH_UPDATE_TODO, payload: response });
 	} catch (error) {
 		console.error('Ошибка при изменении задачи', error);
 		dispatch(setError(error));

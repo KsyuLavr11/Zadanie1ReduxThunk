@@ -8,7 +8,7 @@ import {
 } from '../constants/constants';
 
 const initialState = {
-	loading: false,
+	isLoading: false,
 	error: null,
 	searchTerm: '',
 	isSort: true,
@@ -18,7 +18,7 @@ const initialState = {
 export const appReducer = (state = initialState, action) => {
 	switch (action.type) {
 		case SET_LOADING:
-			return { ...state, loading: action.payload };
+			return { ...state, isLoading: action.payload };
 		case SET_ERROR:
 			return { ...state, error: action.payload };
 		case SET_SEARCH_TERM:
